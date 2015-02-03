@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**/
+
+.inline {
+  display: inline-block;
+}
+
+.group {
+  height: 50px;
+  width: 100%;
+  background: white;
+  margin: 0 auto;
+  clear: both;
+  padding: 14px 20px 6px 40px;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.coname {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  float:left;
+  width:30%;
+}
+
+.coname a {
+  text-decoration:none;
+}
+
+.nav {  
+  float: right;
+  width:69%;
+  font-weight: bold;
+  text-align: right;
+  
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 20px;
+  text-decoration: none; 
+  vertical-align: baseline;
+  font-size: 15px;
+  color: black;
+
+}
+
+
+.main-photo {
+width:100%;
+height: 580px;
+background: url(main-photo.jpg);
+background-attachment: fixed;
+background-size: cover;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.middle {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/*staffs*/
+.staff {
+  width: 32.9%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.down {
+  width: 200px;
+  
+}
+
+* {
+   border: 1px solid red !important;
+}
