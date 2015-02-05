@@ -84,18 +84,15 @@ body {
 }
 
 .main a {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.main a {
   font-weight: bold;
   text-align: right;
   text-decoration: none; 
   text-align: right;
   font-size: 15px;
   color: black;
-
+  display: inline-block;
+  position:relative;
+  margin: 0 20px;
 }
 
 
@@ -200,7 +197,6 @@ footer {
   width:1280px;
 }
 
-/** {
+* {
    border: 1px solid red !important;
 }
-*/
