@@ -53,6 +53,27 @@ table {
   ========================================
 */
 
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /*background: url("surf_and_paddle.png") no-repeat;*/
+  position:relative;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  font-family: 'Open Sans', sans-serif;
+  color:#5e686f;
+
+}
+
 header {
   width:100%;
   height: 523px;
@@ -66,14 +87,18 @@ header {
   vertical-align: bottom;
   margin:10px 40px 10px 140px;
   display:inline-block;
-  
+  font-weight: bold;
+  color:#083452;
+  text-decoration:none;
 }
 
-.header1 {
-  float:left;
+.headertop a {
+  font-weight: bold;
+  color:#083452;
+  text-decoration:none;
 }
-
 .nav {
+  padding-top: 20px;
   float:right;
 }
 
@@ -92,7 +117,6 @@ header h1, h3, .popular {
 
 header h1 {
   font-size: 105px;
-  font-family: "Arial", Helvetica, sans-serif;
   color:white;
 }
 
@@ -102,30 +126,83 @@ header h3 {
 }
 
 .middle {
-  width:100%;
-  min-height:1100px;
+  margin:80px 160px 120px 160px;
+  min-height:800px;
+
 }
 
 .headline {
   float:left;
-  width:64%;
-  background: pink;
+  width:600px;
+  
 }
 
+.headline h2 {
+  color:#083452;
+  font-size: 47px;
+  
+  font-weight: bold;
+  line-height: 55px;
+}
+
+.headline img {
+  height:30px;
+  width:30px;
+}
+
+.headline span {
+
+}
+
+.headline a {
+  background-color:#a3b3bf;
+  color:white;
+}
+
+.headline a img {
+  background-color:#5e686f;
+}
+
+.headline a:hover {
+  background-color:#106db3;
+  color:white;
+}
+
+.headline a:hover img {
+  background-color:#083452;
+}
 .ads {
   float:right;
-  width:33%;
-  background: yellow;
+  width:280px;
+  margin-left: 60px;
+
+}
+
+/*.ads img {
+  width:85px;
+  height:86px;
+  margin:0 auto;
+}*/
+
+.ads li {
+  display:inline-block;
+}
+
+.ads span {
+  float: right;
+}
+
+.ads h3 {
+  padding-top: 50px;
+  clear:both;
+  color:#106db3;
 }
 
 .popular {
   clear:both;
+  color: #083452;
   font-size: 70px;
 }
-
-/** {
-   border: 1px solid red !important;
-}*/
 
 .popularpost {
   width:24.7%;
@@ -134,23 +211,40 @@ header h3 {
 }
 
 footer {
-  width:80%;
-  margin: 10px 80px;
+  padding: 30px 160px;
+  background: #083452;
+  clear:both;
+  color:#a3b3bf;
 }
 
 .div1 {
-  background: url(images/pop-post-1.jpg);
+  background: url(images/pop-post-1.jpg) no-repeat;
 }
 
 .div2 {
-  background: url(images/pop-post-2.jpg);
+  background: url(images/pop-post-2.jpg) no-repeat;
 }
 
 .div3 {
-  background: url(images/pop-post-3.jpg);
+  background: url(images/pop-post-3.jpg) no-repeat;
 }
 
 .div4 {
-  background: url(images/pop-post-4.jpg);
+  background: url(images/pop-post-4.jpg) no-repeat;
 }
 
+.whoah {
+  display:block;
+  font-size:30px;
+  color: #106db3;
+  padding:10px 0 0 0;
+}
+
+/** {
+   border: 1px solid red !important;
+}*/
+
+footer a {
+  text-decoration: none;
+  color:#a3b3bf;
+}
