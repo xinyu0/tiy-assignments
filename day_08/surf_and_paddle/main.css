@@ -120,7 +120,7 @@ header {
 }
 
 .main {
-  margin-top: 140px;
+  margin-top: 180px;
 }
 
 header h1, h3, .popular {
@@ -171,6 +171,12 @@ header h3 {
 .headline a, .headline a:visited {
   background-color:#a3b3bf;
   color:white;
+  display:inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  text-align: center;
+  height:27px;
+  padding:-10px 2px 2px 2px;
 }
 
 .headline a img, .headline a:visited img {
@@ -180,6 +186,8 @@ header h3 {
 .headline a:hover {
   background-color:#106db3;
   color:white;
+  display:inline-block;
+  text-align: center;
 }
 
 .headline a:hover img {
@@ -291,6 +299,11 @@ footer a {
 
 }
 
+.author3 {
+  color:#106db3;
+  font-weight: bold;
+}
+
 h4 {
   text-align: left;
   clear:both;
@@ -298,3 +311,12 @@ h4 {
   color:#106db3;
   padding-bottom: 5px;
 }
+
+.link a, .link a:visited {
+  background:white;
+  color:#a3b3bf;
+
+}
+.link a:hover {
+  background-color:white;
+  color:#106db3;
