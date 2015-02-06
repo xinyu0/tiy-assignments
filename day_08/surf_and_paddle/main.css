@@ -71,6 +71,7 @@ body {
   right:0;
   font-family: 'Open Sans', sans-serif;
   color:#5e686f;
+  line-height: 25px;
 
 }
 
@@ -90,21 +91,32 @@ header {
   font-weight: bold;
   color:#083452;
   text-decoration:none;
+
 }
 
 .headertop a {
   font-weight: bold;
   color:#083452;
   text-decoration:none;
+  position:relative;
+  left:10px;
 }
+
+.headertop img, .headertop a, .headertop nav {
+  vertical-align: middle;
+}
+
 .nav {
   padding-top: 20px;
   float:right;
+  vertical-align: middle;
+  position: relative;
+  bottom:10px;
 }
 
 .nav li {
   display: inline-block;
-
+  padding: 0 5px;
 }
 
 .main {
@@ -118,11 +130,14 @@ header h1, h3, .popular {
 header h1 {
   font-size: 105px;
   color:white;
+  font-weight: 600;
+  
 }
 
 header h3 {
   color:#083452;
   font-weight: bold;
+  margin-top: 40px;
 }
 
 .middle {
@@ -140,26 +155,25 @@ header h3 {
 .headline h2 {
   color:#083452;
   font-size: 47px;
-  
-  font-weight: bold;
-  line-height: 55px;
+  font-weight: 600;
+  line-height: 60px;
 }
 
 .headline img {
-  height:30px;
-  width:30px;
+  height:25px;
+  width:25px;
 }
 
 .headline span {
 
 }
 
-.headline a {
+.headline a, .headline a:visited {
   background-color:#a3b3bf;
   color:white;
 }
 
-.headline a img {
+.headline a img, .headline a:visited img {
   background-color:#5e686f;
 }
 
@@ -171,6 +185,14 @@ header h3 {
 .headline a:hover img {
   background-color:#083452;
 }
+
+.headline p {
+  padding-top: 30px;
+}
+
+aside {
+  color: #a3b3bf;
+}
 .ads {
   float:right;
   width:280px;
@@ -178,14 +200,23 @@ header h3 {
 
 }
 
-/*.ads img {
-  width:85px;
-  height:86px;
+.ads ul {
+  width:266px;
   margin:0 auto;
-}*/
+}
 
 .ads li {
   display:inline-block;
+  
+  text-align: center;
+  text-decoration: none;
+  padding:10px 10px 50px 10px;
+}
+
+.ads a {
+  color:#a3b3bf;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .ads span {
@@ -193,7 +224,7 @@ header h3 {
 }
 
 .ads h3 {
-  padding-top: 50px;
+  padding-top: 10px;
   clear:both;
   color:#106db3;
 }
@@ -201,11 +232,12 @@ header h3 {
 .popular {
   clear:both;
   color: #083452;
-  font-size: 70px;
+  font-size: 75px;
+  margin:200px 0 45px 0;
 }
 
 .popularpost {
-  width:24.7%;
+  width:325px;
   height:330px;
   float:left;
 }
@@ -215,6 +247,7 @@ footer {
   background: #083452;
   clear:both;
   color:#a3b3bf;
+  font-size:15px;
 }
 
 .div1 {
@@ -235,16 +268,33 @@ footer {
 
 .whoah {
   display:block;
+  border-left: 2px solid #a3b3bf;
   font-size:30px;
+  font-weight: 600;
   color: #106db3;
-  padding:10px 0 0 0;
+  padding:20px 20px;
 }
-
-/** {
+/*
+* {
    border: 1px solid red !important;
 }*/
 
 footer a {
   text-decoration: none;
   color:#a3b3bf;
+}
+
+.author2 {
+  width:85px;
+  margin:0 auto;
+  display: block;
+
+}
+
+h4 {
+  text-align: left;
+  clear:both;
+  padding-top: 40px;
+  color:#106db3;
+  padding-bottom: 5px;
 }
