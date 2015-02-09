@@ -59,7 +59,7 @@ table {
   z-index: 2;
 }
 
-.inline {
+.main li {
   display: inline-block;
 }
 
