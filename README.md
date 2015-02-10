@@ -2,7 +2,6 @@
 
 ####Week 3
 * Day 11: [Sassy Design Agency](http://xinyu0.github.io/tiy-assignments/day_11/sassy_design_agency/)  
-
 [Sassy Styles Conference](http://xinyu0.github.io/tiy-assignments/day_11/sassy_styles_conf/)
 
 ####Week 2
