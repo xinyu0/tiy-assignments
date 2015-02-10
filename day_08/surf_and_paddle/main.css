@@ -246,9 +246,10 @@ aside {
 }
 
 .popularpost {
-  width:325px;
+  width:1300px;
   height:330px;
-  float:left;
+  box-sizing:border-box;
+  overflow: hidden;
 }
 
 footer {
@@ -258,6 +259,12 @@ footer {
   clear:both;
   color:#a3b3bf;
   font-size:15px;
+}
+
+.div1, .div2, .div3, .div4 {
+  width:325px;
+  height:330px;
+  float:left;
 }
 
 .div1 {
@@ -284,10 +291,7 @@ footer {
   color: #106db3;
   padding:20px 20px;
 }
-/*
-* {
-   border: 1px solid red !important;
-}*/
+
 
 footer a {
   text-decoration: none;
@@ -322,3 +326,7 @@ h4 {
 .link a:hover {
   background-color:white;
   color:#106db3;
+
+/** {
+   border: 1px solid red !important;
+}*/
