@@ -50,45 +50,103 @@ table {
   Custom styles
   ========================================
 */
-.row {
-  width: 1160px;
-  box-sizing: border-box;
-  text-align: center; }
-
-.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9 {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  background: grey;
-  margin-bottom: 10px;
-  padding: 5px;
-  box-sizing: border-box; }
-
-.column1 {
-  width: 60px; }
-
-.column2 {
-  width: 180px; }
-
-.column3 {
-  width: 270px; }
-
-.column4 {
-  width: 360px; }
-
-.column5 {
-  width: 466.66667px; }
-
-.column6 {
-  width: 560px; }
-
-.column7 {
-  width: 653.33333px; }
-
-.column8 {
-  width: 760px; }
-
-.column9 {
-  width: 850px; }
+.container {
+  width: 1140px;
+  background: yellow;
+  overflow: hidden; }
+  .container .col1 {
+    width: 76.66px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+  .container .col2 {
+    width: 173.32px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+  .container .col3 {
+    width: 269.98px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+    .container .col3:hover {
+      background: white; }
+  .container .col4 {
+    width: 366.64px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+  .container .col5 {
+    width: 463.3px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+  .container .col6 {
+    width: 559.96px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+  .container .col7 {
+    width: 656.62px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+  .container .col8 {
+    width: 753.28px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+  .container .col9 {
+    width: 849.94px;
+    background: red;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; }
+  .container div:last-of-type {
+    margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */
