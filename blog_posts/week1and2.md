@@ -3,4 +3,4 @@ It has already been 2 weeks into my web design class @the iron yard, and it's cr
 
 So far, I have learned the basics of HTML, CSS, the terminal, github, etc. I'm getting better at picking up new stuff, but I'm still struggling. One of the great things about learning @the iron yard is that I know I'm not going through this alone. Everyone here is so nice and so willing to help. And if you are like me, you are shy and don't like to talk. That's totally fine. 
 
-But on the other hand...even though I've learned a lot, I can't stop thinking in 10 weeks I will actually graduate and go out on my own as a designer. It seems really scary. It feels like trying to grow a baby to an adult in 3 months. That being said, this has been a great journey for me, and I am so glad to be here and learning and challenging. 
+But on the other hand...even though I've learned a lot, I can't stop thinking in 10 weeks I will actually graduate and go out on my own as a designer. It seems really scary. It feels like trying to grow a baby to an adult in 3 months. That being said, this has been a great journey for me, and I am so glad to be here and be able to learn and challenge myself again.
