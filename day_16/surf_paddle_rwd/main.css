@@ -183,7 +183,8 @@ header h3 {
   background-color: #083452; }
 
 .headline p {
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 aside {
   color: #a3b3bf; }
@@ -312,6 +313,9 @@ aside {
   float: left;
   display: inline-block; }
 
+@media screen and (min-width: 1030px) {
+  .ads img {
+    padding: 0 34%; } }
 .author2 {
   float: left;
   width: 40%; }
@@ -339,7 +343,8 @@ aside {
     float: left; }
 
   .lady img, .lady span, .lady h4, .lady p {
-    width: 100%; } }
+    width: 100%;
+    padding: 0; } }
 .author3 {
   color: #106db3;
   font-weight: bold; }
@@ -373,11 +378,13 @@ footer a {
   color: #a3b3bf; }
 
 footer .nav {
-  padding-top: 20px; }
+  margin: 0 auto;
+  max-width: 60%; }
 
 footer img, footer span {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 80%; }
 
 @media screen and (min-width: 1030px) {
   footer img, footer span {

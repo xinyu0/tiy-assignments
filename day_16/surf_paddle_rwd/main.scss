@@ -231,6 +231,7 @@ header h3 {
 
 .headline p {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 aside {
@@ -418,6 +419,12 @@ aside {
   display: inline-block;
 }
 
+@media screen and (min-width: 1030px) {
+.ads img {
+  padding:0 34%;
+}
+}
+
 
 .author2 {
   float: left;
@@ -468,7 +475,9 @@ aside {
 
 .lady img, .lady span, .lady h4, .lady p {
   width:100%;
+  padding:0;
 }
+
 
 }
 
@@ -511,12 +520,14 @@ footer a {
 }
 
 footer .nav {
-  padding-top:20px;
+  margin: 0 auto;
+  max-width: 60%;
 }
 
 footer img, footer span {
   display: block;
   margin:0 auto;
+  max-width:80%;
 }
 
 @media screen and (min-width: 1030px) {
