@@ -1,6 +1,14 @@
 # tiy-assignments
+####Week 4
+* Day 20: [Restaurant project: wordlist & typecasts (in progress)](http://xinyu0.github.io/2015/02/22/wordlist.html)
+* Day 19: [Design is History Type Play](http://xinyu0.github.io/2015/02/20/helvetica.html)
+* Day 18: [5 RWD Sketches](http://xinyu0.github.io/2015/02/18/rwdsketching2.html)
+* Day 17: [5 RWD Sketches](http://xinyu0.github.io/2015/02/17/rwdsketching.html)
+* Day 16: [RWD Surf and Paddle](http://xinyu0.github.io/tiy-assignments/day_16/surf_paddle_rwd/)
 
 ####Week 3
+* Day 15: [RWD CodePens](http://xinyu0.github.io/2015/02/15/basicresponsiveCodePens.html)
+* Day 12: [Grid CodePen](http://codepen.io/xinyu/pen/vEdMgw)  [Grid sketches for 10 sites](http://xinyu0.github.io/2015/02/11/sketching2.html)
 * Day 11: [Sassy Design Agency](http://xinyu0.github.io/tiy-assignments/day_11/sassy_design_agency/)  
 [Sassy Styles Conference](http://xinyu0.github.io/tiy-assignments/day_11/sassy_styles_conf/)
 
