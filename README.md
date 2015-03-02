@@ -1,5 +1,8 @@
 # tiy-assignments
 
+####Week 6
+* Day 26: [Hackathorn group project screen shot](https://github.com/xinyu0/tiy-assignments/tree/master/day_26)
+
 ####Week 5
 * Day 21: [Restaurant project: style tiles](https://github.com/xinyu0/tiy-assignments/tree/master/day_21)
 
