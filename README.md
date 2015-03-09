@@ -1,6 +1,7 @@
 # tiy-assignments
 
 ####Week 6
+* Day 30: [Tarka redesign](http://xinyu0.github.io/tiy-assignments/day_30/tarka_redesign/)
 * Day 26: [Hackathorn group project screen shot](https://github.com/xinyu0/tiy-assignments/tree/master/day_26)
 
 ####Week 5
