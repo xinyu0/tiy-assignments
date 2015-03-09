@@ -1,0 +1,405 @@
+$primary-color: #EA8C4F;
+$secondary-color: #f2594b;
+$link-color:#8c4fea;
+$popup-color:#FCF6DD;
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+// * {
+//    border: 1px solid red !important;
+// }
+
+html,
+body {
+  font-size: 16px; }
+
+body {
+  background: $primary-color;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  position: relative;
+  cursor: auto; }
+
+header {
+  background-color: $primary-color;
+  color:$link-color;
+  padding: 10px 0;
+  // position: fixed;
+  width:100%;
+  // top:0;
+  a {
+    color:$link-color;
+    font-size: 1.5rem;
+    padding-left:10%;
+  }
+}
+
+// .nav1 {
+//   background-color:transparent; 
+//   &:hover {
+//   // background-color: #2EB6A2;
+// }
+// }
+
+// .nav2 {
+//   background-color:transparent; 
+//   &:hover {
+//   // background-color: #E8DF45;
+// }
+// }
+
+// .nav3 {
+//   background-color:transparent; 
+//   &:hover {
+//   // background-color: #EE802B;
+// }
+// }
+
+
+
+h1 {
+  text-align: center;
+  color:black;
+  font-weight: normal;
+  font-size: 5rem;
+  line-height: 1;
+  span {
+  font-size: 9rem;
+  font-family: "prenton";
+  color:white;
+  display: block;
+}
+}
+
+@media only screen and (min-width: 850px) {
+  h1 {
+  font-size: 6rem;
+  line-height: 0.5;
+  span {
+  font-size: 11rem;
+}
+}
+}
+
+@media only screen and (min-width: 850px) {
+  h1 {
+  font-size: 7.5rem;
+  line-height: 0.5;
+  span {
+  font-size: 12.5rem;
+}
+}
+}
+
+a:hover {
+  cursor: pointer; }
+
+// * Default Link Styles */
+a {
+  color: $primary-color;
+  text-decoration: none;
+  line-height: inherit; }
+  a:hover, a:focus {
+    color: $secondary-color; }
+  a img {
+    border: none; }
+
+.button {
+  padding: 5px 10px;
+  // border: 1px solid #aaa;
+  // background-color: #eee;
+  // border-radius: 2px;
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  color: $secondary-color;
+  color: $link-color;
+  text-decoration: none;
+  // text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  // &:hover {
+  //   // border-color: #999;
+  //   box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  // }
+  // &:active {
+  //   // box-shadow: 0 1px 3px rgba(0,0,0,0.25) inset;
+  // }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+  &.light {
+    background: rgba(255,255,255,0.5);
+  }
+  .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.popup {
+  margin: 75px auto;
+  padding: 20px;
+  background: $popup-color;
+  border: 1px solid #666;
+  width: 80%;
+  max-width: 780px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+  position: relative;
+
+  h5 {
+    clear:both;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 0;
+  }
+  .light & {
+    border-color: #aaa;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  }
+  h3 {
+    margin-top: 0;
+    color: $secondary-color;
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  
+  .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 24px;
+    // font-weight: bold;
+    text-decoration: none;
+    color: #666;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .content {
+    max-height: 400px;
+    overflow: auto;
+    // h6 {
+    //   display: block;
+    //   width: 100%;
+    //   text-align: center;
+    // }
+  }
+  p {
+    margin: 0 0 1em;
+    font-size: 1.2em;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.wrapper {
+  width:80%;
+  margin: 0 auto;
+  min-height: 600px;
+  overflow: hidden;
+  // background: url(http://i62.tinypic.com/2potyte.jpg);
+  // background-size: cover;
+}
+
+.zen {
+  width:80%;
+  min-width: 500px;
+  max-width: 800px;
+  margin: -650px auto;
+  min-height: 496px;
+  background: url(http://i57.tinypic.com/214oaaw.jpg) center center;
+  background-size: cover;
+
+}
+
+.curry {
+  width:200px;
+  height:200px;
+  margin: 40px auto;
+  display: block;
+  z-index: 9;
+}
+
+
+
+
+.location {
+  width:100%;
+  float: left;
+  font-size: 1.2em;
+  padding:2px;
+  margin-bottom: 10px;
+  text-align: center;
+  span {
+    font-size: 16px;
+    font-style: oblique;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .location {
+  width:50%;
+  
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .location {
+  width:25%;
+  
+  }
+}
+
+.hours {
+  clear:both;
+  width:100%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.menuitem {
+  width:100%;
+  float:left;
+  min-height: 300px;
+  background: #F2B1EE;
+  margin: 10px 1%;
+  padding: 20px;
+  &:nth-of-type(1) {
+  background: url(http://i.imgur.com/uPkfVHE.jpg) center center;
+  background-size: cover;
+}
+  &:nth-of-type(7) {
+  background: url(http://i.imgur.com/vodSZrA.jpg) center center;
+  background-size: cover;
+}
+  &:nth-of-type(n+8) {
+  background: #eada4f;
+}
+  &:nth-of-type(10) {
+  background: url(http://i.imgur.com/6Hr6d2r.jpg) center center;
+  background-size: cover;
+}
+   &:nth-of-type(n+11) {
+  background: #8DFFD5;
+}
+
+  h2 {
+    text-align: center;
+    font-size: 5em;
+    color:$secondary-color;
+    font-weight: 500;
+  }
+  h4 {
+    float:right;
+    font-size: 2em;
+    color:$secondary-color;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h5 {
+    float:left;
+    font-size: 1.5em;
+    color:black;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: -5px;
+  }
+  h6 {
+    clear:both;
+    font-size: 1em;
+    color:#666666;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 670px) {
+  .menuitem {
+  width:48%;
+
+}
+}
+
+@media only screen and (min-width: 950px) {
+  .menuitem {
+  width:31.3%;
+
+}
+}
+
+
+.starters1 {
+  
+  width:100%;
+  margin: 10px auto;
+  margin-top: 0px;
+  min-height: 160px;
+  background: url(http://www.123coimbatore.com/blogs/wp-content/uploads/2014/09/68865-300x191.jpg) center center;
+  background-size: cover; 
+}
+
+.soup1 {
+  
+  width:100%;
+  margin: 10px auto;
+  margin-top: 0px;
+  min-height: 160px;
+  background: url(http://www.chicken.ca/assets/RecipePhotos/_resampled/CroppedImage500500-Mulligatawny-Soup.jpg) center center;
+  background-size: cover; 
+}
+
+.salad1 {
+  
+  width:100%;
+  margin: 10px auto;
+  margin-top: 0px;
+  min-height: 160px;
+  background: url(http://www.tablespoon.com/-/media/Images/Articles/qd/2012/04/2012-04-23-grilled-chicken-kabob-ceasar-salad-586x322.jpg) center center;
+  background-size: cover; 
+}
+
+footer {
+  text-align: center;
+  clear:both; 
+  padding:5px 0;
+  line-height: 2;
+  z-index: 999;
+}
