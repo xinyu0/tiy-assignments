@@ -1,5 +1,8 @@
 # tiy-assignments
 
+####Week 7
+* Day 35: [css zen garden](http://xinyu0.github.io/tiy-assignments/day_35/css_zen/)
+
 ####Week 6
 * Day 30: [Tarka redesign](http://xinyu0.github.io/tiy-assignments/day_30/tarka_redesign/)
 * Day 26: [Hackathorn group project screen shot](https://github.com/xinyu0/tiy-assignments/tree/master/day_26)
