@@ -369,9 +369,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-* {
-  border: 1px solid red; }
-
 html {
   margin: 0;
   padding: 0; }
@@ -562,17 +559,26 @@ footer a:link, footer a:visited {
   float: right;
   margin-top: -600px;
   margin-right: 100px;
-  width: 100px;
+  width: 300px;
   height: 800px; }
 
 .extra4 {
-  background: url(../image/bike.svg) top center no-repeat;
   position: relative;
   float: right;
-  margin-top: -300px;
-  margin-right: 100px;
-  width: 400px;
-  height: 800px; }
+  margin-top: -530px;
+  margin-right: -280px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  animation: 6s LightBulb infinite alternate;
+  -webkit-animation: LightBulb 8s ease, turnon 8s ease;
+  -moz-animation: LightBulb 8s ease, turnon 8s ease;
+  animation: LightBulb 8s ease, turnon 8s ease;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 5px yellow, 0 0 6px yellow, 0 0 30px yellow; }
 
 .extra2 {
   background: url(../image/cat.svg) top center no-repeat;
@@ -704,5 +710,47 @@ footer a:link, footer a:visited {
     top: 0px;
     opacity: 1;
     -ms-transform: rotate(0deg) scaleX(1) scaleY(1); } }
+@-webkit-keyframes turnon {
+  100% {
+    background: #f7db6e; } }
+@-moz-keyframes turnon {
+  100% {
+    background: #f7db6e; } }
+@keyframes turnon {
+  100% {
+    background: #f7db6e; } }
+@-webkit-keyframes LightBulb {
+  0% {
+    box-shadow: 0 0 300px yellow, 0 0 400px yellow, 0 0 500px yellow; }
+  25% {
+    box-shadow: 0 0 200px yellow, 0 0 250px yellow, 0 0 290px yellow; }
+  50% {
+    box-shadow: 0 0 120px yellow, 0 0 170px yellow, 0 0 200px yellow; }
+  75% {
+    box-shadow: 0 0 50px yellow, 0 0 70px yellow, 0 0 100px yellow; }
+  100% {
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; } }
+@-moz-keyframes LightBulb {
+  0% {
+    box-shadow: 0 0 300px yellow, 0 0 400px yellow, 0 0 500px yellow; }
+  25% {
+    box-shadow: 0 0 200px yellow, 0 0 250px yellow, 0 0 290px yellow; }
+  50% {
+    box-shadow: 0 0 120px yellow, 0 0 170px yellow, 0 0 200px yellow; }
+  75% {
+    box-shadow: 0 0 50px yellow, 0 0 70px yellow, 0 0 100px yellow; }
+  100% {
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; } }
+@keyframes LightBulb {
+  0% {
+    box-shadow: 0 0 300px yellow, 0 0 400px yellow, 0 0 500px yellow; }
+  25% {
+    box-shadow: 0 0 200px yellow, 0 0 250px yellow, 0 0 290px yellow; }
+  50% {
+    box-shadow: 0 0 120px yellow, 0 0 170px yellow, 0 0 200px yellow; }
+  75% {
+    box-shadow: 0 0 50px yellow, 0 0 70px yellow, 0 0 100px yellow; }
+  100% {
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; } }
 
 /*# sourceMappingURL=style.css.map */
