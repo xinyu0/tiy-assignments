@@ -433,10 +433,10 @@ footer a:link, footer a:visited {
 	z-index: 999;
 	// vertical-align: middle;
 	background: transparent;
-	animation: 6s LightBulb infinite alternate;
-	@include animation(LightBulb 8.0s ease, turnon 8.0s ease);
+	// animation: 6s LightBulb infinite alternate;
+	@include animation(LightBulb 4.0s linear, turnon 8.0s ease);
 	@include animation-iteration-count(infinite);
-	box-shadow: 0 0 5px yellow, 0 0 6px yellow, 0 0 30px yellow;
+	// box-shadow: 0 0 5px yellow, 0 0 6px yellow, 0 0 30px yellow;
 	}
 
 
@@ -630,14 +630,14 @@ footer a:link, footer a:visited {
 // 
 
 
-@include keyframes(turnon) {
-	100% { background: hsl(48, 89%, 70%); }
-}
+// @include keyframes(turnon) {
+// 	100% { background: hsl(48, 89%, 70%); }
+// }
 
 @include keyframes(LightBulb) {
 	0%   { box-shadow: 0 0 300px yellow, 0 0 400px yellow, 0 0 500px yellow; }
 	25%   { box-shadow: 0 0 200px yellow, 0 0 250px yellow, 0 0 290px yellow; }
-	50%   { box-shadow: 0 0 120px yellow, 0 0 170px yellow, 0 0 200px yellow; }
-	75%   { box-shadow: 0 0 50px yellow, 0 0 70px yellow, 0 0 100px yellow; }
-	100%   { box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; }
+	50%   { box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;  }
+	75%   { box-shadow: 0 0 200px yellow, 0 0 250px yellow, 0 0 290px yellow; }
+	100%  { box-shadow: 0 0 300px yellow, 0 0 400px yellow, 0 0 500px yellow; }
 }
