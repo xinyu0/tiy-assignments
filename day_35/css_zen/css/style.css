@@ -376,7 +376,7 @@ html {
 body {
   font-family: "adobe-caslon-pro","Georgia", "Cambria", "Times New Roman", "Times", serif;
   line-height: 1.5;
-  color: #555753;
+  color: #f5f5f5;
   background: #fff url(blossoms.jpg) no-repeat bottom right;
   margin: 0;
   padding: 0; }
@@ -386,15 +386,15 @@ p {
   text-align: justify; }
 
 h3 {
-  font: italic normal 1.4em georgia, sans-serif;
-  letter-spacing: 1px;
+  font-size: 3rem;
+  font-weight: 500;
   margin-bottom: 0;
-  color: #7D775C; }
+  color: #FBD17C; }
 
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #B7A5DF; }
+  color: #785272; }
 
 a:visited {
   font-weight: bold;
@@ -418,103 +418,169 @@ abbr {
   overflow: hidden; }
 
 .intro {
-  min-width: 470px;
+  min-width: 400px;
   width: 100%; }
   .intro header {
     background: url(../image/shikumen.svg) top center, url(../image/background.svg) top center;
-    height: 600px;
+    background-size: 500px;
+    height: 550px;
     top: 0; }
 
 header h1 {
+  background: url(../image/banner.svg) top center no-repeat;
+  background-size: 350px;
   margin: 0 auto;
-  margin-top: 95px;
-  display: block;
-  width: 219px;
+  color: transparent;
+  font-size: 0.1em;
+  padding-top: 150px;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 400px;
   text-align: center;
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 500;
+  font-family: "madre-script";
+  height: 500px;
   overflow: hidden; }
+  header h1::before {
+    content: "css zen";
+    color: grey;
+    font-size: 32px; }
+  header h1::after {
+    content: "garden";
+    color: grey;
+    font-size: 32px; }
 
+@media only screen and (min-width: 500px) {
+  header h1 {
+    background-size: 400px;
+    padding-top: 180px; }
+    header h1::before {
+      content: "css zen";
+      color: grey;
+      font-size: 45px; }
+    header h1::after {
+      content: "garden";
+      color: grey;
+      font-size: 45px; } }
 header h2 {
-  background: transparent url(h2.gif) no-repeat top left;
   margin: 0 auto;
+  margin-top: -260px;
   text-align: center;
+  font-size: 1.68rem;
+  color: #8CBCA9;
   overflow: hidden; }
 
-header {
-  padding-top: 20px;
-  height: 87px; }
-
+@media (min-width: 500px) {
+  header h2 {
+    margin-top: -190px; } }
 .summary {
   clear: both;
   margin: 0 auto;
-  margin-top: -350px;
-  width: 15%; }
+  margin-top: -270px;
+  width: 300px;
+  color: grey; }
 
+@media (min-width: 500px) {
+  .summary {
+    margin-top: -200px;
+    width: 350px; } }
 .summary p {
-  text-align: left; }
+  text-align: left;
+  line-height: 1.5; }
 
 .preamble {
   float: right;
   clear: right;
-  padding: 0px 120px 0 10px;
-  width: 60%;
-  position: relative;
-  top: 200px;
+  padding: 130px 50px 0 50px;
+  width: 100%;
   color: white; }
 
-.supporting {
-  padding-left: 10px;
-  margin-bottom: 40px;
-  float: right;
-  clear: both;
-  margin-top: 200px; }
-
+@media only screen and (min-width: 830px) {
+  .preamble {
+    float: right;
+    clear: right; }
+    .preamble p {
+      width: 65%;
+      float: right;
+      clear: both;
+      max-width: 700px; }
+    .preamble h3 {
+      float: right; } }
 .explanation, .participation, .benefits {
-  margin-left: 500px;
-  margin-right: 120px;
-  color: white; }
-
-.requirements {
-  padding-left: 120px;
-  padding-right: 500px;
-  margin-top: 100px;
-  padding-bottom: 100px;
   color: white;
-  position: relative;
-  left: 0;
+  padding: 0 50px 0 50px;
+  clear: both;
+  overflow: hidden;
+  float: right; }
+  .explanation p, .participation p, .benefits p {
+    width: 100%; }
+  .explanation a, .participation a, .benefits a {
+    color: #FBD17C; }
+
+@media only screen and (min-width: 830px) {
+  .explanation p, .participation p, .benefits p {
+    width: 65%;
+    float: right;
+    max-width: 1000px;
+    clear: both; }
+  .explanation h3, .participation h3, .benefits h3 {
+    float: right;
+    clear: both; } }
+.requirements {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 10px 50px 50px 50px;
+  color: white;
   background: url(../image/background3.svg) top center;
   background-size: 500px; }
+  .requirements p {
+    max-width: 700px; }
+  .requirements a {
+    color: #FBD17C; }
 
+@media only screen and (min-width: 830px) {
+  .requirements p {
+    margin-right: 25%; } }
 footer {
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  bottom: 0; }
 
 footer a:link, footer a:visited {
   margin-right: 20px; }
 
 .sidebar {
-  margin-right: 600px;
-  position: absolute;
-  top: 700px;
-  left: 100px;
   background: url(../image/window.svg) top center;
   background-size: 250px;
-  height: 900px; }
+  height: 980px;
+  clear: both;
+  width: 100%; }
 
+@media only screen and (min-width: 830px) {
+  .sidebar {
+    float: left;
+    margin-left: 10px;
+    width: 250px;
+    margin-top: -2100px; } }
 .sidebar .wrapper {
-  font: 10px verdana, sans-serif;
-  background: transparent url(paper-bg.jpg) top left repeat-y;
-  padding: 80px;
-  width: 250px; }
+  width: 160px;
+  margin: 0 auto;
+  color: grey; }
+  .sidebar .wrapper a {
+    color: #785272; }
+
+.designer-name {
+  color: #785272; }
 
 .sidebar h3.select {
   background: transparent url(h3.gif) no-repeat top left;
-  margin: 10px 0 5px 0;
-  width: 97px;
-  height: 16px;
-  text-indent: 100%;
-  white-space: nowrap;
+  color: #8CBCA9;
+  font-weight: 700;
+  text-shadow: 0 0 20px #785272;
+  line-height: 1.2;
   overflow: hidden; }
 
 .sidebar h3.archives {
@@ -555,21 +621,19 @@ footer a:link, footer a:visited {
 
 .extra1 {
   background: url(../image/light.svg) top center no-repeat;
-  position: relative;
   float: right;
   margin-top: -600px;
-  margin-right: 100px;
-  width: 300px;
-  height: 800px; }
+  width: 280px;
+  height: 600px; }
 
 .extra4 {
-  position: relative;
   float: right;
-  margin-top: -530px;
-  margin-right: -280px;
-  min-width: 50px;
-  height: 50px;
+  margin-right: 17px;
+  margin-top: -535px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  z-index: 999;
   background: transparent;
   animation: 6s LightBulb infinite alternate;
   -webkit-animation: LightBulb 8s ease, turnon 8s ease;
@@ -583,21 +647,29 @@ footer a:link, footer a:visited {
 .extra2 {
   background: url(../image/cat.svg) top center no-repeat;
   position: relative;
-  float: left;
-  margin-top: -930px;
-  margin-left: 100px;
+  margin-left: -40px;
+  margin-top: -280px;
   width: 170px;
-  height: 170px; }
+  height: 170px;
+  z-index: 999; }
 
+@media only screen and (min-width: 830px) {
+  .extra2 {
+    margin-top: -1000px;
+    margin-left: 50px; } }
 .extra3 {
   background: url(../image/tail.svg) top center no-repeat;
   position: relative;
   float: left;
-  margin-top: -780px;
-  margin-left: 140px;
+  margin-top: -250px;
+  margin-left: -40px;
   width: 170px;
   height: 170px; }
 
+@media only screen and (min-width: 830px) {
+  .extra3 {
+    margin-top: -930px;
+    margin-left: 50px; } }
 .extra3 {
   animation: animationFrames linear 1s;
   animation-iteration-count: infinite;

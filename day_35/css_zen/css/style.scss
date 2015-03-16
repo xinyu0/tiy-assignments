@@ -13,12 +13,15 @@
 @import "../bourbon/bourbon";
 @import "normalize";
 
-$primary-color: #EA8C4F;
-$secondary-color: #f2594b;
-$link-color:#8c4fea;
+$primary-color: #f5f5f5;
+$secondary-color: #FBD17C;
+$link-color:#785272;
+$header-color:#8CBCA9;
 $popup-color:#FCF6DD;
 $background:#D9E1DA;
 $background-d:#C0D0D0;
+$global:500px;
+$medium:830px;
 
 
 html {
@@ -39,25 +42,27 @@ html {
 body { 
 	font-family: "adobe-caslon-pro","Georgia", "Cambria", "Times New Roman", "Times", serif;
 	line-height: 1.5;
-	color: #555753; 
+	color: $primary-color; 
 	background: #fff url(blossoms.jpg) no-repeat bottom right; 
 	margin: 0; 
 	padding: 0;
+	// font-size: 1.1rem;
 	}
 p { 
 	margin-top: 0; 
 	text-align: justify;
 	}
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
+	// font: italic normal 1.4em georgia, sans-serif;
+	font-size: 3rem;
+	font-weight: 500;
 	margin-bottom: 0; 
-	color: #7D775C;
+	color: $secondary-color;
 	}
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #B7A5DF;
+	color: $link-color;
 	}
 a:visited { 
 	font-weight: bold; 
@@ -90,37 +95,75 @@ abbr {
 }
 
 .intro { 
-	min-width: 470px;
+	min-width: 400px;
 	width: 100%;
 	header {background: url(../image/shikumen.svg) top center, url(../image/background.svg) top center;
-  	// background-size: 500px 600px
-  	height: 600px;
+  	background-size: 500px;
+  	height: 550px;
   	// margin-top: 20px;
   	top:0;
 	}
 }
 
 header h1 { 
-	// background: transparent url(h1.gif) no-repeat top left;
+	background: url(../image/banner.svg) top center no-repeat;
+	background-size: 350px;
 	margin:0 auto;
-	margin-top: 95px;
-	display: block;
-	width: 219px;
+	color:transparent;
+	font-size: 0.1em;
+	padding-top: 150px;
+	padding-left:80px;
+	padding-right:80px;
+	// visibility: hidden;
+	width: 400px;
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 1.2;
 	font-weight: 500;
-	// height: 87px;
+	font-family: "madre-script";
+	height: 500px;
 	// float: left;
 
 	// text-indent: 100%;
 	// white-space: nowrap;
 	overflow: hidden;
+	&::before {
+  content: "css zen";
+  color: grey;
+  font-size:32px;
+}
+		&::after {
+  content: "garden";
+  color: grey;
+  font-size:32px;
+}
 	}
+
+
+@media only screen and (min-width: $global) {
+	header h1 {
+background-size: 400px;
+padding-top: 180px;
+		&::before {
+  content: "css zen";
+  color: grey;
+  font-size:45px;
+}
+		&::after {
+  content: "garden";
+  color: grey;
+  font-size:45px;
+}
+}
+}
+
 header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
+	// background: transparent url(h2.gif) no-repeat top left; 
 	margin: 0 auto;
+	margin-top: -260px;
 	text-align: center;
+	font-size: 1.68rem;
+	color:$header-color;
 	// width: 200px; 
 	// height: 18px; 
 
@@ -130,88 +173,200 @@ header h2 {
 	// white-space: nowrap;
 	overflow: hidden;
 	}
-header {
-	padding-top: 20px;
-	height: 87px;
+@media (min-width: $global) {
+	header h2 {
+	margin-top: -190px; 
+	
 }
+}
+
+// header {
+// 	padding-top: 20px;
+// 	height: 87px;
+// }
 
 .summary {
 	clear: both; 
 	margin: 0 auto;
-	margin-top: -350px; 
-	width: 15%; 
+	margin-top: -270px; 
+	width: 300px; 
+	color:grey;
 
 	// float: left;
 	}
+
+@media (min-width: $global) {
+	.summary {
+	margin-top: -200px; 
+	width: 350px; 
+}
+}
 .summary p {
 	// font: italic 1.1em/2.2 georgia; 
 	text-align: left;
+	line-height: 1.5;
 	}
 
 .preamble {
 	float: right;
 	clear: right; 
-	padding: 0px 120px 0 10px;
-	width:60%;
-	position: relative;
-	top: 200px;
+	padding: 130px 50px 0 50px;
+	width:100%;
+	// position: relative;
+	// top: 200px;
 	color:white;
 	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	float:right;
-	clear:both;
-	margin-top: 200px;
+
+@media only screen and (min-width: $medium) {
+.preamble {
+	float: right;
+	clear: right; 
+	p {
+		width:65%;
+		float:right;
+		clear: both;
+		max-width: 700px;
+	} 
+	h3 {
+		float:right;
 	}
-.explanation, .participation, .benefits {
-	margin-left: 500px; 
-	margin-right: 120px;
-	color:white;
+	}
 }
 
-.requirements {
-	padding-left: 120px; 
-	padding-right: 500px;
-	margin-top: 100px;
-	padding-bottom: 100px;
+// .supporting {	
+// 	float: right;
+// 	clear: right; 
+// 	// padding: 0 50px 0 50px;
+// 	width:100%;
+
+// 	}
+
+.explanation, .participation, .benefits {
+	// margin-left: 500px; 
+	// margin-right: 120px;
 	color:white;
-	position: relative;
-	left:0;
+	padding: 0 50px 0 50px;
+	
+	clear: both; 
+	overflow: hidden;
+	float: right;
+	p {
+		width:100%;
+	}
+	a {
+  		color:$secondary-color;
+  	}
+}
+
+
+
+
+@media only screen and (min-width: $medium) {
+.explanation, .participation, .benefits {
+	p {
+		width:65%;
+		float:right;
+		max-width: 1000px;
+		clear:both;
+		
+	} 
+	h3 {
+		float:right;
+		clear:both;
+	}
+	}
+}
+
+
+.requirements {
+	width:100%;
+	float:left;
+	clear:both;
+	// box-sizing:content-box;
+	padding: 10px 50px 50px 50px;
+	// padding-left: 120px; 
+	// padding-right: 500px;
+	// margin-top: 100px;
+	color:white;
+	// position: relative;
+	// left:0;
 	background: url(../image/background3.svg) top center;
   	background-size: 500px;
+  	p {
+  
+  		max-width: 700px;
+  	}
+  	a {
+  		color:$secondary-color;
+  	}
 }
+
+@media only screen and (min-width: $medium) {
+	.requirements {
+		p {
+			margin-right: 25%;
+		}
+	}
+}
+
 footer { 
 	text-align: center; 
+	position:relative;
+	bottom: 0;
+
 	}
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
 	}
 
 .sidebar {
-	margin-right: 600px; 
-	position: absolute; 
-	top: 700px; 
-	left: 100px;
+	// margin-right: 600px; 
+	// position: absolute; 
+	// top: 700px; 
+	// left: 100px;
 	background: url(../image/window.svg) top center;
   	background-size: 250px;
-  	height: 900px;
+  	height: 980px;
+  	clear:both;
+  	width: 100%; 
 	}
+@media only screen and (min-width: $medium) {
+.sidebar {
+	float: left;
+	margin-left: 10px;
+	width: 250px;
+	margin-top: -2100px;
+}
+}
+
 .sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 80px; 
+	// font: 10px verdana, sans-serif; 
+	// background: rgba(250,250,250,.8); 
+	// padding: 80px; 
 	// margin-top: 150px; 
-	width: 250px; 
+	width: 160px; 
+	margin: 0 auto;
+	color:grey;
+	a {
+		color:$link-color;
 	}
+	}
+
+.designer-name {
+	color:$link-color;
+}
 .sidebar h3.select { 
 	background: transparent url(h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
+	// margin: 10px 0 5px 0; 
+	// width: 97px; 
+	// height: 16px; 
 
-	text-indent: 100%;
-	white-space: nowrap;
+	// text-indent: 100%;
+	// white-space: nowrap;
+	color: $header-color;
+	font-weight: 700;
+	text-shadow: 0 0 20px $link-color;
+	line-height: 1.2;
 	overflow: hidden;
 	}
 .sidebar h3.archives { 
@@ -258,22 +413,24 @@ footer a:link, footer a:visited {
 
 .extra1 {
 	background: url(../image/light.svg) top center no-repeat;
-	position: relative; 
+	// position: relative; 
 	float:right;
 	margin-top: -600px; 
-	margin-right: 100px;
-	width: 300px; 
-	height: 800px;
+	// margin-right: 100px;
+	width: 280px; 
+	height: 600px;
 	}
 
 .extra4 {
-	position: relative; 
+	// position: relative; 
 	float:right;
-	margin-top: -530px; 
-	margin-right: -280px;
-	min-width: 50px;
-	height:50px;
+	margin-right: 17px;
+	margin-top: -535px; 
+	// margin-right: -265px;
+	width: 40px;
+	height:40px;
 	border-radius: 50%;
+	z-index: 999;
 	// vertical-align: middle;
 	background: transparent;
 	animation: 6s LightBulb infinite alternate;
@@ -286,22 +443,36 @@ footer a:link, footer a:visited {
 .extra2 {
 	background: url(../image/cat.svg) top center no-repeat;
 	position: relative; 
-	float:left;
-	margin-top: -930px; 
-	margin-left: 100px;
+	margin-left: -40px;
+	margin-top: -280px; 
+	// margin-left: 100px;
 	width: 170px; 
 	height: 170px;
+	z-index: 999;
 	}
 
+@media only screen and (min-width: $medium) {
+	.extra2 {
+		margin-top: -1000px;
+		margin-left: 50px;
+	}
+}
 .extra3 {
 	background: url(../image/tail.svg) top center no-repeat;
 	position: relative; 
 	float:left;
-	margin-top: -780px; 
-	margin-left: 140px;
+	margin-top: -250px; 
+	margin-left: -40px;
 	width: 170px; 
 	height: 170px;
 	}
+
+@media only screen and (min-width: $medium) {
+	.extra3 {
+		margin-top: -930px;
+		margin-left: 50px;
+	}
+}
 
 .extra3 {
   animation: animationFrames linear 1s;
