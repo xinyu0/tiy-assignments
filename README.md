@@ -1,4 +1,13 @@
 # tiy-assignments
+####Week 9
+* Day 44: [GoodReads redesign comps](github.com/xinyu0/tiy-assignments/tree/master/day_44)  
+* Day 41: [GoodReads redesign wireframes](github.com/xinyu0/tiy-assignments/tree/master/day_41)  
+[4 breakpoints comp template](github.com/xinyu0/tiy-assignments/tree/master/day_41)
+* Day 40: [GoodReads redesign elements collage](github.com/xinyu0/tiy-assignments/tree/master/day_40)
+
+
+####Week 8
+* Day 36: [logo design](github.com/xinyu0/tiy-assignments/tree/master/day_36) (project to refine)
 
 ####Week 7
 * Day 35: [css zen garden](http://xinyu0.github.io/tiy-assignments/day_35/css_zen/)
