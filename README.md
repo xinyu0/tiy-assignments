@@ -1,6 +1,9 @@
 # tiy-assignments
 
 ###Week 10
+* Day 50: [logo & business cards](https://github.com/xinyu0/tiy-assignments/tree/master/day_50)  
+* Day 49: [Earth Day 2015 wireframes](https://github.com/xinyu0/tiy-assignments/tree/master/day_49)  
+* Day 48: [Earth Day 2015 style tiles](https://github.com/xinyu0/tiy-assignments/tree/master/day_48)  
 * Day 47: [kicking off final project_proposal](https://github.com/xinyu0/tiy-assignments/tree/master/day_47)
 
 ####Week 9
