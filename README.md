@@ -1,4 +1,8 @@
 # tiy-assignments
+
+###Week 10
+* Day 47: [kicking off final project_proposal](https://github.com/xinyu0/tiy-assignments/tree/master/day_47)
+
 ####Week 9
 * Day 44: [GoodReads redesign comps](https://github.com/xinyu0/tiy-assignments/tree/master/day_44)  (project to refine)
 * Day 41: [GoodReads redesign wireframes](https://github.com/xinyu0/tiy-assignments/tree/master/day_41)  
