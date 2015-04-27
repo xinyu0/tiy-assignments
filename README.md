@@ -1,9 +1,7 @@
 # tiy-assignments
 
-###Week 11
-* Day 55: [...](...)  
-* Day 54: [...](...)  
-* Day 53: [...](...)  
+###Week 11 
+* Day 54: [Earth Day 2015 logo & icons](https://github.com/xinyu0/tiy-assignments/tree/master/day_54)  
 * Day 52: [business cards & logos](https://github.com/xinyu0/tiy-assignments/tree/master/day_52)  
 * Day 51: [Earth Day 2015 comps v2](https://github.com/xinyu0/tiy-assignments/tree/master/day_51)
 
