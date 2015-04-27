@@ -1,14 +1,15 @@
-####Earth Day 2015 Website*
+####Earth Day 2015 Website Redesign
 
-Xinyu Wang
+####CLIENT
+Earth Day Network
 
 ####BACKGROUND
 Earth Day Network (EDN) is an organization whose goals are to educate the public about climate change, the importance of sustainability, and how we can reduce our carbon footprint or resolve local environmental issues. With its 45th anniversary coming up this month, they have launched its 2015 campaign website themed “It’s Our Turn to Lead.”  
-Although Earth Day is the world’s largest civic observance, their campaign website doesn’t reflect the importance of its message and it doesn’t motivate people coming to the site to take actions.   
+Although Earth Day is the world’s largest civic observance, their 2015 website is neither motivational or inspiring. The site is very difficult to navigate, and it's very confusing to the users as what actions to take.   
 
 ####OBJECTIVE  
 
-To revamp Earth Day Network’s 2015 campaign website to attract more individuals and organizations to get involved and pass along the importance of protecting the earth.
+To revamp Earth Day Network’s 2015 campaign website to attract more individuals and organizations to get involved and be passionate about celebrating Earth Day.
 
 ####TARGET AUDIENCE   
 
