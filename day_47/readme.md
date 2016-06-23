@@ -1,4 +1,4 @@
-####Earth Day 2015 Website Redesign
+####Earth Day Website Redesign
 
 ####CLIENT
 Earth Day Network
